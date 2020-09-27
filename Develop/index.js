@@ -2,11 +2,11 @@ const fs = require("fs");
 const util = require("util");
 const inquirer = require("inquirer");
 const generateMarkdown = require("./utils/generateMarkdown");
-const writeFileAsync = util.promisify(fs.writeFile);
+const writeReadme = util.promisify(fs.writeFile);
 
 // array of questions for user
-function questions(){
-    return inquirer.questions([
+function prompt(){
+    return inquirer.prompt([
     {
         type: "input",
         name: "title",
@@ -67,16 +67,18 @@ function questions(){
         message: "Please enter your email: "
     }
 ])};
-// function to generate README
+
+// function to write README
 async function init() {
     try {
-        const data = await questions();
+        const data = await prompt();
         const generateContent = generateMarkdown(data);
-        await writeFileAsync('./Develop/mdfile/README.md', generateContent);
+        await writeReadme('./Develop/mdfile/README.md', generateContent);
     }   catch(err) {
         console.log(err);
     }
   }
   
+//  function call to initialize program
   init();  
  
