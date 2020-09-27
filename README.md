@@ -32,8 +32,8 @@
   There are no tests included.
 
   ## Questions
-  Reach out via email.
+  Reach out via email.<br>
   Check me out on Github: [Benyunus1](https://github.com/Benyunus1)
-  Feel free to email me with any questions: Beyazidy@gmail.com
+  <br>Feel free to email me with any questions: Beyazidy@gmail.com
 
   _This README was carefully crafted by [readme-generator](https://github.com/benyunus1/readme-generator)_

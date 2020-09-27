@@ -34,9 +34,9 @@ function generateMarkdown(data) {
   ${data.tests}
 
   ## Questions
-  ${data.questions}
+  ${data.questions}<br>
   Check me out on Github: [${data.username}](https://github.com/${data.username})
-  Feel free to email me with any questions: ${data.email}
+  <br>Feel free to email me with any questions: ${data.email}
 
   _This README was carefully crafted by [readme-generator](https://github.com/benyunus1/readme-generator)_
 `;
