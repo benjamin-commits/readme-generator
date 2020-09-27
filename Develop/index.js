@@ -5,8 +5,8 @@ const generateMarkdown = require("./utils/generateMarkdown");
 const writeFileAsync = util.promisify(fs.writeFile);
 
 // array of questions for user
-function promptUser(){
-    return inquirer.prompt([
+function questions(){
+    return inquirer.questions([
     {
         type: "input",
         name: "title",
@@ -70,10 +70,8 @@ function promptUser(){
 // function to generate README
 async function init() {
     try {
-        // Ask user questions and generate responses
-        const data = await promptUser();
+        const data = await questions();
         const generateContent = generateMarkdown(data);
-        // Write new README.md to dist directory
         await writeFileAsync('./Develop/mdfile/README.md', generateContent);
     }   catch(err) {
         console.log(err);
