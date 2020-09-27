@@ -68,8 +68,8 @@ function prompt(){
     }
 ])};
 
-// function to write README
-async function init() {
+// function to write README file
+  async function init() {
     try {
         const data = await prompt();
         const generateContent = generateMarkdown(data);
