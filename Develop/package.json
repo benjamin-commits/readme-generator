@@ -1,14 +1,21 @@
 {
-  "name": "static-site",
+  "name": "readme-generator",
   "version": "1.0.0",
-  "description": "",
+  "description": "a node app to create professoinal readme data based upon user input",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/benyunus1/readme-generator.git"
+  },
+  "author": "Beyazid Yunus",
   "license": "ISC",
   "dependencies": {
-    "inquirer": "^6.3.1"
+    "fs": "0.0.1-security",
+    "inquirer": "^6.5.2",
+    "promisify": "0.0.3",
+    "util": "^0.12.3"
   }
 }
