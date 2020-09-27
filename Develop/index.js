@@ -49,22 +49,22 @@ function prompt(){
     {
         type: "input",
         name: "tests",
-        message: "Is there a test included? "
+        message: "Is a test included? "
     },
     {
         type: "input",
         name: "questions",
-        message: "What do I do if I have an issue? "
+        message: "What should I do if there are issues? "
     },
     {
         type: "input",
         name: "username",
-        message: "Please enter your GitHub username: "
+        message: "Enter your GitHub username: "
     },
     {
         type: "input",
         name: "email",
-        message: "Please enter your email: "
+        message: "Enter your email: "
     }
 ])};
 
